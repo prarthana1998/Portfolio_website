@@ -1,3 +1,6 @@
+:root {
+  --YELLOW: yellow; /* Change 'yellow' to your desired yellow color */
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
@@ -14,7 +17,7 @@ a{
   }
 body{
     font-family: "Poppins","sans-serif";
-    background: #080808;
+    background: #050c19;
     color: #fff;
 }
 html{
@@ -332,20 +335,75 @@ section {
   width: 400px;
   margin: auto 0;
 }
+.container {
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+}
+/*edu*/
 
+.education, .experience {
+  padding: 20px;
+}
+
+.education h2, .experience h2 {
+  margin-bottom: 20px;
+}
+
+.entry {
+  background-color: #050c19; /* Dark shade of blue */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+    border: 2px solid white; /* Dark shade of blue border */
+}
+.experience .entry {
+  display: inline-block; /* Display entries horizontally */
+  width: calc(33.33% - 20px); /* Adjust width to fit 3 entries per row */
+  margin-right: 20px; /* Add right margin for spacing between entries */
+  vertical-align: top; /* Align entries to the top */
+  width: 450px; /* Fixed width */
+  height: 400px;
+}
+
+.experience .entry:last-child {
+  margin-right: 0; /* Remove right margin from last entry to prevent overflow */
+}
+
+.entry h3 {
+  color: #fff;
+}
+
+.details {
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.description {
+  color: #ccc;
+  margin-top: 10px;
+  line-height: 1.4;
+}
 .education-all{
   display: flex; /* Change display to flex */
   justify-content: space-around;
-  margin: auto 20px;
+  align-items: center; /* Vertically center items */
+  margin: auto;
+  flex-direction: row;
+  
 }
-.education{
+/* .education{
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+} */
+.edu-list {
+  /* Add display: flex and remove default padding */
   display: flex;
+  padding: 0;
 }
-
 .edu-list .item{
+  display: inline-block;
   background: white;
   box-shadow: purple;
   border-bottom: 3px solid red;
@@ -353,13 +411,10 @@ section {
   margin-top:15px;
   border-radius:6px;
   transition: .3s ease;
+  margin-right: 20px;
+  align-items: center;
   
 }
-.edu-list .item .year{
-  font-size: 10px;
-  margin-bottom: 5px;
-  color: #080808;
-  }
 .edu-list .item p span{
 font-weight: 500;
 }
@@ -400,6 +455,131 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+/*PROJECT*/
+.projects {
+  padding: 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+}
+
+.project {
+  width: 450px; /* Set the width */
+  height: 650px; /* Set the height */
+  border: 1px solid #043959; /* Border color same as background */
+  overflow: hidden; /* Hide overflow content */
+  display: inline-block;
+  margin-right: 20px; /* Add margin between the project boxes */
+}
+
+.project:last-child {
+    margin-right: 0; /* Remove margin from the last project box */
+}
+
+.project img {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px 10px 0 0; /* Round the top corners */
+}
+
+.project-content {
+  padding: 20px;
+  color: #fff;
+}
+
+.project-content h3 {
+  margin-bottom: 10px;
+}
+
+.project-content .details {
+  color: #ccc;
+  text-decoration: none;
+  border: none;
+  padding: 5px 10px;
+}
+
+.project-content .details:hover {
+  background-color: #fff;
+  color: #043959;
+}
+.view-project {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #043959;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.view-project:hover {
+  background-color: #fff;
+  color: #043959;
+}
+/*SKILLS*/
+.skills {
+  margin-top: 8vh;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-container h2 {
+  margin-bottom: 20px;
+}
+
+.skill-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skill {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skill i {
+  font-size: 3.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.skill span {
+  margin-top: 0.5rem;
+}
+
+.skill i:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.fa-html5 {
+	color: red;
+}
+.fa-css3-alt {
+	color: yellowgreen;
+}
+.fa-js {
+	color: yellow;
+}
+.fa-react {
+	color: dodgerblue;
+}
+.fa-bootstrap {
+	color: blueviolet;
 }
 
 /* CONTACT */
