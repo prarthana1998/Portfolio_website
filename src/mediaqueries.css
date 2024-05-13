@@ -7,7 +7,7 @@
       flex-wrap: wrap;
     }
     #contact,
-    #projects {
+    #proj {
       height: fit-content;
     }
   }
@@ -19,17 +19,15 @@
     #hamburger-nav {
       display: flex;
     }
-    #experience,
-    .experience-details-container {
+    #exp,
+    .entry {
       margin-top: 2rem;
     }
-    #profile,
+    #prof,
     .section-container {
       display: block;
     }
-    .arrow {
-      display: none;
-    }
+    
     section,
     .section-container {
       height: fit-content;
@@ -37,7 +35,7 @@
     section {
       margin: 0 5%;
     }
-    .section__pic-container {
+    .section_pic-container {
       width: 275px;
       height: 275px;
       margin: 0 auto 2rem;
