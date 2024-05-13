@@ -1,4 +1,4 @@
-Welcome to my portfolio! [Visit My Portfolio Website]([https://www.example.com](https://prarthana1998.github.io/Portfolio_website/))
+Welcome to my portfolio! [Visit My Portfolio Website]([https://prarthana1998.github.io/Portfolio_website/])
 
 
 # Personal Portfolio Website
