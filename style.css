@@ -366,6 +366,20 @@ margin-bottom: 20px;
     border: 2px solid #043959; /* Dark shade of blue border */
 }
 .experience .entry {
+    background-color: #1a1a2e;  /* Dark background to contrast with the page */
+    border: 2px solid #2a5298;   /* Add a solid border */
+    border-radius: 10px;         /* Rounded corners */
+    padding: 20px;               /* Add padding inside the entry */
+    margin-bottom: 20px;         /* Space between each job entry */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effect */
+}
+
+.experience .entry:hover {
+    transform: translateY(-5px);  /* Move up slightly when hovered */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Add a shadow for depth */
+}
+
+.experience .entry {
   display: inline-block; /* Display entries horizontally */
   width: calc(33.33% - 20px); /* Adjust width to fit 3 entries per row */
   margin-right: 20px; /* Add right margin for spacing between entries */
