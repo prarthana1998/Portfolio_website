@@ -350,19 +350,21 @@ margin-bottom: 20px;
 /*edu*/
 
 .education, .experience {
-  padding: 20px;
+  padding: 40px;
 }
 
 .education h2, .experience h2 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-
+.exp{
+  position: relative;
+}
 .entry {
   background-color: #050c19; /* Dark shade of blue */
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
     margin-bottom: 20px;
-    width: 40%;
+    width: 50%;
     border: 2px solid #043959; /* Dark shade of blue border */
 }
 .experience .entry {
@@ -370,7 +372,7 @@ margin-bottom: 20px;
     border: 2px solid #2a5298;   /* Add a solid border */
     border-radius: 10px;         /* Rounded corners */
     padding: 20px;               /* Add padding inside the entry */
-    margin-bottom: 20px;         /* Space between each job entry */
+    margin-bottom: 40px;         /* Space between each job entry */
     transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effect */
 }
 
@@ -382,7 +384,7 @@ margin-bottom: 20px;
 .experience .entry {
   display: inline-block; /* Display entries horizontally */
   width: calc(33.33% - 20px); /* Adjust width to fit 3 entries per row */
-  margin-right: 20px; /* Add right margin for spacing between entries */
+  margin-right: 30px; /* Add right margin for spacing between entries */
   vertical-align: top; /* Align entries to the top */
   width: 450px; /* Fixed width */
   height: 400px;
@@ -395,17 +397,18 @@ margin-bottom: 20px;
 .entry h3 {
   color: #fff;
 }
-
+.description {
+  color: #ccc;
+  margin-top: 10px;
+  line-height: 1.4;
+  
+}
 .details {
   color: #ccc;
   margin-bottom: 5px;
 }
 
-.description {
-  color: #ccc;
-  margin-top: 10px;
-  line-height: 1.4;
-}
+
 .education-all{
   display: flex; /* Change display to flex */
   justify-content: space-around;
